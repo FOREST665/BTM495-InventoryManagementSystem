@@ -341,11 +341,11 @@ def testManageOrderNoSupplier():
 
     # Start testing the manage order sequence
 
-    manager = ims.findUserByName("Sarah")
-    if manager == None:
+    supplier = ims.findSupplierByName("The milk people")
+    if Supplier == None:
         return True
     else:
-        print("Found a manager when none was expected!")
+        print("Found a supplier when none was expected!")
         return False
 
 
@@ -495,6 +495,8 @@ def runTests():
         print("Track Inventory Over Tests Passed!")
     else:
         print("Track Inventory Over Tests  Failed!")
+
+
 
 
 # this runs the test code if you run the command `python inventory_management.py`
